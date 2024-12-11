@@ -1,0 +1,4 @@
+(b) gpg --symmetric --cipher-algo AES256 /home/kali/Desktop/test
+(c) gpg2john /home/kali/Desktop/test.gpg > hash.txt
+(d) john hash.txt
+(e) gpg --decrypt /home/kali/Desktop/test.gpg

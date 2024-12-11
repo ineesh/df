@@ -1,0 +1,4 @@
+dcfldd if=/dev/sda hash=md5,sha256 hashwindow=20G md5log=md5.txt sha256log=sha256.txt \
+       hashconv=after bs=512 conv=noerror,sync split=20G splitformat=aa of=sda.dd
+
+dcfldd if=<input_file> of=<output_file> [options]
